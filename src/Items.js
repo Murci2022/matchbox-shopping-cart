@@ -3,7 +3,7 @@ import BugattiBlack from './images/Bugatti Type 57 Atlantic 1938:.png.png';
 import Ferrari from './images/Ferrari 250 GTO:.png.png';
 import Porsche from './images/Porsche 911 1963.png';
 
-const cartItems = [
+const Items = [
   {
     id: 'recdRxBsE14Rr2VuJ',
     title: 'Bugatti Type 57 Atlantic Gold',
@@ -19,7 +19,7 @@ const cartItems = [
     amount: 1,
   },
   {
-    id: 'recdRxBsE14Rr2VuJ',
+    id: 'recdRxBsE14Rr2VuI',
     title: 'Porsche',
     price: '315,00',
     img: Porsche,
@@ -34,4 +34,4 @@ const cartItems = [
   },
 ];
 
-export default cartItems;
+export default Items;
