@@ -1,12 +1,13 @@
 import React from 'react';
 import { CartIcon } from '../icons';
+import { MatchboxLogo } from '../icons';
 
 const Navbar = () => {
   return (
     <>
       <nav>
         <div className='nav-center'>
-          <h3>Matchbox Logo</h3>
+          <MatchboxLogo />
           <div className='nav-container'>
             <CartIcon />
             <div className='amount-container'>
