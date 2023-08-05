@@ -123,6 +123,11 @@ Navbar
   width: 4rem;
 }
 nav {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
   background: var(--clr-primary);
   padding: 1.25rem 2rem;
   border: 3px solid rgb(228, 36, 36);
@@ -144,13 +149,17 @@ nav h3 {
   display: block;
   position: relative;
 }
-.material-symbols-outlined {
-  width: 50px;
+.add-decrease-icon {
+  color: var(--clr-white);
+  font-size: 1.25rem;
+}
+
+.remove-icon {
   color: var(--clr-white);
 }
 
-.material-symbols-outlined {
-  font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 200, 'opsz' 48;
+.cart-icon {
+  font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 200, 'opsz' 48;
   font-size: 3rem;
 }
 
@@ -180,7 +189,7 @@ Cart
   min-height: calc(100vh - 120px);
   width: 90vw;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 80px;
   padding: 2.5rem 0;
   max-width: var(--fixed-width);
 }
@@ -229,9 +238,11 @@ Cart Item
 ===============
 */
 .cart-item {
+  position: relative;
+  border: 1px solid white;
   display: grid;
   align-items: center;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr 0.3fr 0.1fr;
   grid-column-gap: 1.5rem;
   margin: 1.5rem 0;
 }
@@ -240,6 +251,7 @@ Cart Item
   height: 5rem;
   object-fit: cover;
 }
+/* ------------ grid 2----------- */
 .cart-item h4 {
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -249,28 +261,37 @@ Cart Item
   color: var(--clr-grey-5);
 }
 .remove-btn {
+  position: absolute;
+  top: -12px;
+  right: -12px;
   color: var(--clr-primary);
   letter-spacing: var(--spacing);
   cursor: pointer;
   font-size: 0.85rem;
-  background: transparent;
+  background: var(--clr-grey-10);
   border: none;
-  margin-top: 0.375rem;
+
   transition: var(--transition);
 }
 .remove-btn:hover {
   color: var(--clr-primary-light);
 }
+/* -------------------------grid 3--------------------- */
+.amount-btn-conti {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .amount-btn {
-  width: 24px;
+  /* width: 24px; */
   background: transparent;
   border: none;
   cursor: pointer;
 }
-.amount-btn svg {
+.amount-btn {
   color: var(--clr-primary);
 }
-.amount-btn:hover svg {
+.amount-btn:hover span {
   color: var(--clr-primary-light);
 }
 .amount {
@@ -318,3 +339,7 @@ hr {
   display: flex;
   justify-content: space-around;
 }
+
+/* .material-symbols-outlined {
+  font-size: 20px;
+} */

@@ -3,10 +3,29 @@ export const CartIcon = () => {
   return (
     <div>
       {/* Other content here */}
-      <span className='material-symbols-outlined'>shopping_cart</span>
+      <span className='cart-icon material-symbols-outlined'>shopping_cart</span>
     </div>
   );
 };
+
+export const AddIcon = () => {
+  return (
+    <span className='add-decrease-icon material-symbols-outlined'>add</span>
+  );
+};
+export const DecreaseIcon = () => {
+  return (
+    <span className='add-decrease-icon material-symbols-outlined'>remove</span>
+  );
+};
+export const RemoveIcon = () => {
+  return (
+    <span class='remove-icon material-symbols-outlined'>
+      disabled_by_default
+    </span>
+  );
+};
+
 export const MatchboxLogo = () => {
   return (
     <div className='matchbox-logo'>
@@ -26,7 +45,7 @@ export const ChevronDown = () => {
       className='h-6 w-6'
       fill='none'
       viewBox='0 0 24 24'
-      stroke='currentColor'
+      stroke='white'
       strokeWidth={2}
     >
       <path
@@ -45,7 +64,7 @@ export const ChevronUp = () => {
       className='h-6 w-6'
       fill='none'
       viewBox='0 0 24 24'
-      stroke='currentColor'
+      stroke='white'
       strokeWidth={2}
     >
       <path

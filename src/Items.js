@@ -6,14 +6,14 @@ import Porsche from './images/Porsche 911 1963.png';
 const Items = [
   {
     id: 'recdRxBsE14Rr2VuJ',
-    title: 'Bugatti Type 57 Atlantic Gold',
+    title: 'Bugatti Type 57',
     price: '298,00',
     img: BugattiGold,
     amount: 1,
   },
   {
     id: 'rec1JZlfCIBOPdcT2',
-    title: 'Bugatti Type 57 Atlantic black',
+    title: 'Bugatti Type 57',
     price: '298,00',
     img: BugattiBlack,
     amount: 1,
