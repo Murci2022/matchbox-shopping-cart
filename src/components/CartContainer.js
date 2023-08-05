@@ -33,21 +33,23 @@ const CartContainer = () => {
         })}
       </div>
       <footer>
-        <hr />
+        <div className='footer-conti'>
+          <hr />
 
-        <div className='cart-total'>
-          {' '}
-          <h4>
-            total <span>{total}€</span>
-          </h4>
-          <button
-            className='btn clear-btn'
-            onClick={() => {
-              dispatch(clearCart());
-            }}
-          >
-            Clear Cart
-          </button>
+          <div className='cart-total'>
+            {' '}
+            <h4>
+              total <span>{total}€</span>
+            </h4>
+            <button
+              className='btn clear-btn'
+              onClick={() => {
+                dispatch(clearCart());
+              }}
+            >
+              Clear Cart
+            </button>
+          </div>
         </div>
       </footer>
     </section>
