@@ -162,6 +162,7 @@ nav h3 {
   color: var(--clr-white);
 }
 .nav-container {
+  border: 1px solid black;
   display: block;
   position: relative;
 }
@@ -177,6 +178,7 @@ nav h3 {
 .cart-icon {
   font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 200, 'opsz' 48;
   font-size: 3rem;
+  margin-top: 3px;
 }
 
 .amount-container {
@@ -255,12 +257,15 @@ Cart Item
 */
 .cart-item {
   position: relative;
-  border: 1px solid white;
+  /* border: 1px solid white; */
+
   display: grid;
   align-items: center;
   grid-template-columns: auto 1fr 0.3fr 0.1fr;
   grid-column-gap: 1.5rem;
   margin: 1.5rem 0;
+  background-color: #070446;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .cart-item img {
   width: 5rem;
@@ -294,9 +299,12 @@ Cart Item
 }
 /* -------------------------grid 3--------------------- */
 .amount-btn-conti {
+  border: 1px solid var(--clr-grey-5);
   display: flex;
   justify-content: space-between;
+  padding: 1px;
   align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .amount-btn {
   /* width: 24px; */

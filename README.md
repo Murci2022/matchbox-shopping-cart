@@ -10,6 +10,7 @@
   - [Links](#links)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [My favorite code](#my-favorite-code)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -53,3 +54,27 @@ The app was built using React and Redux Toolkit to provide a smooth and intuitiv
 - [React](https://reactjs.org/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [Cascading Style Sheets](https://developer.mozilla.org/en-US/docs/Web/CSS) -
+
+### My favorite code
+
+My favorites from this challenge:
+
+```js
+   newItem: (state, action) => {
+      let newItem;
+      for (let i = 0; i < Items.length; i++) {
+        const itemExists = state.cartItems.some(
+          (item) => item.id === Items[i].id
+        );
+        if (!itemExists) {
+          newItem = Items[i];
+          break;
+        }
+      }
+      if (!newItem) return;
+
+      state.cartItems = [...state.cartItems, newItem];
+    },
+
+
+```
