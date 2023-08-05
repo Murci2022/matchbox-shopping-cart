@@ -1,10 +1,11 @@
 import React from 'react';
 import CartItem from './CartItem';
 import { useDispatch, useSelector } from 'react-redux';
+import { clearCart } from '../features/cart/cartSlice';
 
 const CartContainer = () => {
   const { cartItems, total, amount } = useSelector((store) => store.cart);
-
+  const dispatch = useDispatch();
   console.log(cartItems);
   if (amount < 1) {
     return (
@@ -18,7 +19,7 @@ const CartContainer = () => {
   return (
     <section className='cart'>
       <header>
-        <h2>your bag</h2>
+        <h3>choose your car</h3>
       </header>
       <div>
         {cartItems.map((item) => {
@@ -33,9 +34,21 @@ const CartContainer = () => {
       </div>
       <footer>
         <hr />
-        <h4>
-          total <span>${total}</span>
-        </h4>
+
+        <div className='cart-total'>
+          {' '}
+          <h4>
+            total <span>{total}€</span>
+          </h4>
+          <button
+            className='btn clear-btn'
+            onClick={() => {
+              dispatch(clearCart());
+            }}
+          >
+            Clear Cart
+          </button>
+        </div>
       </footer>
     </section>
   );
