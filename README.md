@@ -9,7 +9,8 @@
   - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [What I learned](#what-i-learned-from-this-challenge)
+  - [My favorite code](#my-favorite-code)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -53,3 +54,40 @@ The app was built using React and Redux Toolkit to provide a smooth and intuitiv
 - [React](https://reactjs.org/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
 - [Cascading Style Sheets](https://developer.mozilla.org/en-US/docs/Web/CSS) -
+
+### What I learned from this challenge
+
+### My favorite code
+
+My favorites from this challenge:
+
+```js
+   newItem: (state, action) => {
+      let newItem;
+      for (let i = 0; i < Items.length; i++) {
+        const itemExists = state.cartItems.some(
+          (item) => item.id === Items[i].id
+        );
+        if (!itemExists) {
+          newItem = Items[i];
+          break;
+        }
+      }
+      if (!newItem) return;
+
+      state.cartItems = [...state.cartItems, newItem];
+    },
+
+
+```
+
+- Within the loop, the itemExists variable is assigned the result of the state.cartItems.some() function.
+- The some() function checks if at least one element in the cartItems array has the same id as the current element in the Items array being iterated.
+- If such an element is found in the cart, itemExists will be true.
+- If itemExists is false, it means the current element in the Items array is not present in the cartItems array, making it a new, unique item that can be added. In this case, the current element is assigned to newItem, and the loop is immediately broken using the break statement. This ensures that we find the first unique item and do not continue iterating through the Items array unnecessarily.
+- After the loop, there is a check for newItem. If newItem is not set (i.e., still undefined), it means that there are no new unique items left to add, and the reducer simply returns early without modifying the state.
+- If a newItem is found, it means we have a new unique item to add to the cart. The reducer uses the spread operator [...state.cartItems, newItem] to create a new array with all the existing items from cartItems and the new newItem. This new array is then assigned to state.cartItems, effectively updating the state with the new item added to the cart.
+
+### Continued development
+
+### Usefull recources

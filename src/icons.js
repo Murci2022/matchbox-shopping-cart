@@ -20,7 +20,7 @@ export const DecreaseIcon = () => {
 };
 export const RemoveIcon = () => {
   return (
-    <span class='remove-icon material-symbols-outlined'>
+    <span className='remove-icon material-symbols-outlined'>
       disabled_by_default
     </span>
   );
