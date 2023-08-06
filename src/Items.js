@@ -14,7 +14,7 @@ const Items = [
   {
     id: 'rec1JZlfCIBOPdcT2',
     title: 'Bugatti Type 57 B',
-    price: '298,00',
+    price: '215,00',
     img: BugattiBlack,
     amount: 1,
   },

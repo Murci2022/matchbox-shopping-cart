@@ -87,3 +87,7 @@ My favorites from this challenge:
 - If itemExists is false, it means the current element in the Items array is not present in the cartItems array, making it a new, unique item that can be added. In this case, the current element is assigned to newItem, and the loop is immediately broken using the break statement. This ensures that we find the first unique item and do not continue iterating through the Items array unnecessarily.
 - After the loop, there is a check for newItem. If newItem is not set (i.e., still undefined), it means that there are no new unique items left to add, and the reducer simply returns early without modifying the state.
 - If a newItem is found, it means we have a new unique item to add to the cart. The reducer uses the spread operator [...state.cartItems, newItem] to create a new array with all the existing items from cartItems and the new newItem. This new array is then assigned to state.cartItems, effectively updating the state with the new item added to the cart.
+
+### Continued development
+
+### Usefull recources
