@@ -7,15 +7,17 @@ const CartItem = ({ id, img, title, price, amount }) => {
   const dispatch = useDispatch();
   return (
     <article className='cart-item'>
-      <img
-        src={img}
-        alt={title}
-      />
-      <div>
+      <div className='grid-item-1'>
+        <img
+          src={img}
+          alt={title}
+        />
+      </div>
+      <div className='grid-item-2'>
         <h4>{title}</h4>
         <h4 className='item-price'>{price}€</h4>
       </div>
-      <div className='amount-btn-conti'>
+      <div className='amount-btn-conti grid-item-3'>
         <button
           className='amount-btn'
           onClick={() => {
@@ -36,15 +38,15 @@ const CartItem = ({ id, img, title, price, amount }) => {
         >
           <DecreaseIcon />
         </button>
+        <button
+          className='remove-btn'
+          onClick={() => {
+            dispatch(removeItem(id));
+          }}
+        >
+          <RemoveIcon />
+        </button>
       </div>
-      <button
-        className='remove-btn'
-        onClick={() => {
-          dispatch(removeItem(id));
-        }}
-      >
-        <RemoveIcon />
-      </button>
     </article>
   );
 };

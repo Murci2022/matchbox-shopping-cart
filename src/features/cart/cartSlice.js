@@ -37,6 +37,9 @@ const cartSlice = createSlice({
       state.cartItems = [];
       state.amount = 0;
     },
+    resetCart: (state) => {
+      state.cartItems = initialState.cartItems.slice(0, 2);
+    },
     removeItem: (state, action) => {
       const itemId = action.payload;
       state.cartItems = state.cartItems.filter((item) => item.id !== itemId);
@@ -52,19 +55,34 @@ const cartSlice = createSlice({
     },
     newItem: (state, action) => {
       let newItem;
-      for (let i = 0; i < Items.length; i++) {
-        const itemExists = state.cartItems.some(
-          (item) => item.id === Items[i].id
-        );
-        if (!itemExists) {
-          newItem = Items[i];
-          break;
-        }
-      }
-      if (!newItem) return;
+      console.log('itemLength', Items.length);
+      console.log('cartItemsLength', state.cartItems.length);
 
-      state.cartItems = [...state.cartItems, newItem];
-      state.amount += 1;
+      if (Items.length !== state.cartItems.length + 1) {
+        for (let i = 0; i < Items.length; i++) {
+          const itemExists = state.cartItems.some(
+            (item) => item.id === Items[i].id
+          );
+          if (!itemExists) {
+            newItem = Items[i];
+            break;
+          }
+        }
+        if (!newItem) return;
+
+        state.cartItems = [...state.cartItems, newItem];
+        state.amount += 1;
+      } else {
+        const messageElement = document.getElementById('message');
+        messageElement.style.display = 'block';
+        messageElement.style.opacity = '1';
+        setTimeout(() => {
+          messageElement.style.opacity = '0';
+          setTimeout(() => {
+            messageElement.style.display = 'none';
+          }, 1000);
+        }, 1000);
+      }
     },
   },
 });
@@ -73,6 +91,7 @@ console.log(cartSlice);
 
 export const {
   clearCart,
+  resetCart,
   removeItem,
   increase,
   decrease,
