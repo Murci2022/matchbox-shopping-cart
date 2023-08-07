@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 
 const Footer = () => {
   const { total } = useSelector((store) => store.cart);
-  console.log(total, 'TL');
+
   return (
     <footer>
       <div className='footer-conti'>

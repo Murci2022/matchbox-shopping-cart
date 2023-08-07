@@ -17,6 +17,7 @@ const Items = [
     price:"",
     img:,
     amount:1,
+    isPopupVisible: false,
     
   },
   */
@@ -25,7 +26,8 @@ const Items = [
     title: 'Bugatti Type 57-G',
     price: '298,00',
     img: BugattiGold,
-    amount: 0,
+    amount: 1,
+    isPopupVisible: false,
   },
   {
     id: 'rec1JZlfCIBOPdcT2',
@@ -33,6 +35,7 @@ const Items = [
     price: '215,00',
     img: BugattiBlack,
     amount: 0,
+    isPopupVisible: false,
   },
   {
     id: 'aoikUhFgE1R2Rtej',
@@ -40,6 +43,7 @@ const Items = [
     price: '435,00',
     img: MercedesGullwing,
     amount: 0,
+    isPopupVisible: false,
   },
   {
     id: 'aoikUhFgE14Rr2Mej',
@@ -47,6 +51,7 @@ const Items = [
     price: '435,00',
     img: RollsRoyceCabrio,
     amount: 0,
+    isPopupVisible: false,
   },
   {
     id: 'aoikRxBsE14Rr2Mej',
@@ -54,6 +59,7 @@ const Items = [
     price: '354,00',
     img: DeTomaso,
     amount: 0,
+    isPopupVisible: false,
   },
   {
     id: 'recwTo160XST3PIoW',
@@ -61,6 +67,7 @@ const Items = [
     price: '250,00',
     img: Ferrari,
     amount: 0,
+    isPopupVisible: false,
   },
   {
     id: 'lskjRxBsE14Rr2Mej',
@@ -68,6 +75,7 @@ const Items = [
     price: '294,00',
     img: FordMustang,
     amount: 0,
+    isPopupVisible: false,
   },
   {
     id: 'lskjRxBghjzRr2Mej',
@@ -75,6 +83,7 @@ const Items = [
     price: '320,00',
     img: ChevroletCorvette,
     amount: 0,
+    isPopupVisible: false,
   },
 
   {
@@ -83,6 +92,7 @@ const Items = [
     price: '315,00',
     img: Lamborgini,
     amount: 0,
+    isPopupVisible: false,
   },
   {
     id: 'recdRxBsE14Tt7Mej',
@@ -90,6 +100,7 @@ const Items = [
     price: '375,00',
     img: AstonMartin,
     amount: 0,
+    isPopupVisible: false,
   },
   {
     id: 'recdRxBsE14Rr2VuI',
@@ -97,6 +108,7 @@ const Items = [
     price: '315,00',
     img: Porsche,
     amount: 0,
+    isPopupVisible: false,
   },
 ];
 

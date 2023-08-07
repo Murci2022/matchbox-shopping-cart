@@ -5,6 +5,7 @@ const initialState = {
   amount: 2,
   total: 0,
   isLoading: 0,
+  clickedItem: [],
 };
 
 const cartSlice = createSlice({
@@ -15,20 +16,15 @@ const cartSlice = createSlice({
       let amount = 0;
       let total = 0;
       state.cartItems.forEach((item) => {
-        console.log('Item Amount:', typeof item.amount);
-        console.log('Item Price:', typeof item.price);
         if (
           typeof item.amount !== 'number' ||
           typeof item.price !== 'number' ||
           isNaN(item.price)
         ) {
-          console.log('invalid data type');
         }
 
         amount += item.amount;
         total += item.amount * parseFloat(item.price);
-
-        console.log('total', total);
       });
       state.amount = amount;
       state.total = total;
@@ -47,16 +43,40 @@ const cartSlice = createSlice({
     },
     increase: (state, { payload }) => {
       const cartItem = state.cartItems.find((item) => item.id === payload.id);
+      console.log(cartItem.amount);
       cartItem.amount = cartItem.amount + 1;
     },
     decrease: (state, { payload }) => {
       const cartItem = state.cartItems.find((item) => item.id === payload.id);
       cartItem.amount = cartItem.amount - 1;
+      const newAmount = cartItem.amount;
+      if (newAmount === 0) {
+        const messageElement = document.getElementById('message');
+        messageElement.style.display = 'block';
+        messageElement.style.opacity = '1';
+        setTimeout(() => {
+          messageElement.style.opacity = '0';
+          setTimeout(() => {
+            messageElement.style.display = 'none';
+          }, 1000);
+        }, 1000);
+      }
+    },
+
+    showPopup: (state, { payload }) => {
+      const cartItem = state.cartItems.find((item) => item.id === payload.id);
+      console.log(cartItem.clickedItem, 'cartItem');
+      cartItem.isPopupVisible = true;
+
+      console.log(cartItem.id, cartItem.isPopupVisible);
+    },
+    cancelPopup: (state, { payload }) => {
+      const cartItem = state.cartItems.find((item) => item.id === payload.id);
+
+      cartItem.isPopupVisible = false;
     },
     newItem: (state, action) => {
       let newItem;
-      console.log('itemLength', Items.length);
-      console.log('cartItemsLength', state.cartItems.length);
 
       if (Items.length !== state.cartItems.length + 1) {
         for (let i = 0; i < Items.length; i++) {
@@ -87,7 +107,7 @@ const cartSlice = createSlice({
   },
 });
 
-console.log(cartSlice);
+console.log(initialState);
 
 export const {
   clearCart,
@@ -95,6 +115,8 @@ export const {
   removeItem,
   increase,
   decrease,
+  showPopup,
+  cancelPopup,
   newItem,
   calculateTotals,
 } = cartSlice.actions;
