@@ -60,7 +60,7 @@ const CartContainer = () => {
               dispatch(newItem());
             }}
           >
-            More Items
+            Add Items
           </button>
         </div>
       </div>
