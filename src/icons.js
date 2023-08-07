@@ -1,4 +1,4 @@
-import logo from './images/matchbox-studios.png';
+import logo from './images/matchbox-studios-logo.png';
 export const CartIcon = () => {
   return (
     <div>
