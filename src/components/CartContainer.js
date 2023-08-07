@@ -4,10 +4,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { clearCart, newItem, resetCart } from '../features/cart/cartSlice';
 
 const CartContainer = () => {
-  const { cartItems, total, amount } = useSelector((store) => store.cart);
+  const { cartItems } = useSelector((store) => store.cart);
   const dispatch = useDispatch();
-  console.log(total, 'total');
-  if (amount < 1) {
+  if (cartItems.length < 1) {
     return (
       <section className='cart'>
         <h2>your bag</h2>
