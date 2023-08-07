@@ -88,6 +88,35 @@ My favorites from this challenge:
 - After the loop, there is a check for newItem. If newItem is not set (i.e., still undefined), it means that there are no new unique items left to add, and the reducer simply returns early without modifying the state.
 - If a newItem is found, it means we have a new unique item to add to the cart. The reducer uses the spread operator [...state.cartItems, newItem] to create a new array with all the existing items from cartItems and the new newItem. This new array is then assigned to state.cartItems, effectively updating the state with the new item added to the cart.
 
+```css
+.cart-item {
+  position: relative;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 0.8fr 0.4fr;
+  grid-column-gap: 2rem;
+  margin: 1.5rem 0;
+  background-color: #070446;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.grid-item-1 {
+  overflow: hidden;
+  cursor: pointer;
+}
+.cart-item img {
+  width: 17rem;
+  height: 6rem;
+  object-fit: cover;
+  transition: 0.1s linear;
+}
+.cart-item img:hover {
+  transform: scale(1.1);
+  object-fit: cover;
+}
+```
+
+This css code creates a grid layout for a cart item with an image. On hover, the image scales up smoothly with a transition effect. The image overflow is hidden, and it is set to cover the container.
+
 ### Continued development
 
 ### Usefull recources
