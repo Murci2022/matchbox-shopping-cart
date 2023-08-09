@@ -34,20 +34,7 @@ const CartItem = ({ id, img, title, price, amount, isPopupVisible }) => {
           <h4 className='item-price'>{price}€</h4>
         </div>
         <div className='amount-btn-conti grid-item-3'>
-          <button
-            className='amount-btn'
-            onClick={() => {
-              dispatch(increase({ id }));
-            }}
-          >
-            <AddIcon />
-          </button>
-          <p
-            className='amount'
-            style={{ color: amount > 0 ? '#ff4800' : 'white' }}
-          >
-            {amount}
-          </p>
+          {/* ------------DECREASE */}
           <button
             className='amount-btn'
             onClick={() => {
@@ -59,6 +46,23 @@ const CartItem = ({ id, img, title, price, amount, isPopupVisible }) => {
           >
             <DecreaseIcon />
           </button>
+          {/* ------------DECREASE END */}
+          <p
+            className='amount'
+            style={{ color: amount > 0 ? '#ff4800' : 'white' }}
+          >
+            {amount}
+          </p>
+          {/* ---------------add----------------- */}
+          <button
+            className='amount-btn'
+            onClick={() => {
+              dispatch(increase({ id }));
+            }}
+          >
+            <AddIcon />
+          </button>
+          {/* ---------------add end----------------- */}
           <button
             className='remove-btn'
             onClick={() => {

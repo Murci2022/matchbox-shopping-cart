@@ -9,6 +9,7 @@ import RollsRoyceCabrio from './images/Rolls Royce Cabrio.png';
 import MercedesGullwing from './images/Mercedes 300SL Gullwing 1954.png';
 import ChevroletCorvette from './images/Chevrolet Corvette in 1963.png';
 import AstonMartin from './images/Aston Martin DB5.png';
+import FerrariBox from './images/Ferrari 250 GTO.png';
 const Items = [
   /* 
   {
@@ -100,6 +101,14 @@ const Items = [
     price: '375,00',
     img: AstonMartin,
     amount: 0,
+    isPopupVisible: false,
+  },
+  {
+    id: 'recdRxBs6z7ur2VuJ',
+    title: 'Ferrari GTO',
+    price: '293,00',
+    img: FerrariBox,
+    amount: 1,
     isPopupVisible: false,
   },
   {

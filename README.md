@@ -115,7 +115,9 @@ My favorites from this challenge:
 }
 ```
 
-This css code creates a grid layout for a cart item with an image. On hover, the image scales up smoothly with a transition effect. The image overflow is hidden, and it is set to cover the container.
+- this code creates a grid layout for a cart item with an image.
+- On hover, the image scales up smoothly with a transition effect.
+  -The image overflow is hidden, and it is set to cover the container.
 
 ### Continued development
 
