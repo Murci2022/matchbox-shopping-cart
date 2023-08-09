@@ -1,6 +1,6 @@
 # Shopping cart app
 
-![Design preview for the matchbox-shopping-cart app](./screenshot.png)
+![preview for the matchbox-shopping-cart app](./screenshot.png)
 
 ## Table of contents
 
@@ -14,32 +14,30 @@
   - [Continued development](#continued-development)
   - [Acknowledgments](#acknowledgments)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
 This Shopping-Cart App includes all the cool features redux toolkit has to offers, things like store, slice, reducers, action creators and of course create async-thunk.
 
-# Password generator app
-
-![Design preview for the Password generator app coding challenge](./preview)
-
 ## Welcome! 👋
 
 ## The challenge
 
-The task I took up was to construct a Shopping Cart App equipped with the following user functionalities:
+The task I took up was to design and construct a Matchbox Shopping Cart App equipped with the following user functionalities:
 
 - Dynamically updating the total price and quantity as items are added or removed
+- Add and delete items to the cart
 - Clearing all items from the cart
-- Adjusting the quantity of individual items directly from the cart
+- Reset cart to default
+- Adjust and decrease the quantity of individual items directly from the cart
 - Implementing hover and focus states to all interactive elements on the page
+- Pop-up window for clicked items with cancel function
 
-The app was built using React and Redux Toolkit to provide a smooth and intuitive shopping experience, enabling users to manage their virtual cart with unparalleled precision and convenience.
+The app was built using React and Redux Toolkit to provide a smooth and intuitive shopping experience, enabling users to manage their virtual cart with unparalleled precision and convenience with a great user experiance.
 
 ### Screenshot
 
-![](./screenshot.png)
+![preview for the matchbox-shopping-cart app](./screenshot.png)
 
 ### Links
 
@@ -56,6 +54,8 @@ The app was built using React and Redux Toolkit to provide a smooth and intuitiv
 - [Cascading Style Sheets](https://developer.mozilla.org/en-US/docs/Web/CSS) -
 
 ### What I learned from this challenge
+
+Developing the Matchbox Shopping Cart App using React and Redux Toolkit was a comprehensive learning experience. I honed state management, async operations, user-centric design, and error handling. Crafting real-time updates, handling styling, and solving challenges enriched my skills, enabling me to create user-friendly and efficient applications.
 
 ### My favorite code
 
@@ -121,10 +121,24 @@ My favorites from this challenge:
 
 ### Continued development
 
-### Usefull recources
+In future projects, I want to focus on the following areas to improve my skills:
+
+State Management: Advanced State Management using Redux-Toolkit with React.
+
+Data Fetching: Seamless Data Fetching implementation.
+
+Typescript: Deepening my Typescript skills.
+
+### Usefull resources
+
+- [Redux-Toolkit Documentation](https://redux-toolkit.js.org/)
+
+- [FullStack Labs](https://www.fullstacklabs.co/blog/using-redux-toolkit-with-reactjs)
 
 ### Acknowledgments
+
+Thank you to FullStack Lab.
 
 ### Author
 
-### Acknowledgments
+- Website - [Murci2022/M.K](https://portfolio-mate.vercel.app/)
