@@ -1,6 +1,6 @@
 # Shopping cart app
 
-![](./screenshot.png)
+![Design preview for the matchbox-shopping-cart app](./screenshot.png)
 
 ## Table of contents
 
@@ -12,7 +12,7 @@
   - [What I learned](#what-i-learned-from-this-challenge)
   - [My favorite code](#my-favorite-code)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+  - [Acknowledgments](#acknowledgments)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -22,7 +22,7 @@ This Shopping-Cart App includes all the cool features redux toolkit has to offer
 
 # Password generator app
 
-![Design preview for the Password generator app coding challenge](./preview.png)
+![Design preview for the Password generator app coding challenge](./preview)
 
 ## Welcome! 👋
 
@@ -122,3 +122,9 @@ My favorites from this challenge:
 ### Continued development
 
 ### Usefull recources
+
+### Acknowledgments
+
+### Author
+
+### Acknowledgments
