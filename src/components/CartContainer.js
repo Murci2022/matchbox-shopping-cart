@@ -28,7 +28,7 @@ const CartContainer = () => {
   return (
     <section className='cart'>
       <header>
-        <h3>choose your car</h3>
+        <h3>choose your matchbox</h3>
       </header>
       <div>
         {cartItems.map((item) => {
