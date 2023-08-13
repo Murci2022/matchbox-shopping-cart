@@ -34,11 +34,11 @@ The app was built using React and Redux Toolkit to provide a smooth and intuitiv
 
 ### Screenshot
 
-![preview for the matchbox-shopping-cart app](./screenshot.png)
+![preview for the matchbox-shopping-cart app](/src/images/screenshot.png)
 
 ### Links
 
-- Live Site URL:
+- Live Site URL: (https://matchbox-shopping-cart.vercel.app/)
 
 ### Built with
 
