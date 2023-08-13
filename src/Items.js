@@ -10,6 +10,8 @@ import MercedesGullwing from './images/Mercedes 300SL Gullwing 1954.png';
 import ChevroletCorvette from './images/Chevrolet Corvette in 1963.png';
 import AstonMartin from './images/Aston Martin DB5.png';
 import FerrariBox from './images/Ferrari 250 GTO.png';
+import ShelbyCobra from './images/ShelbyCobra.png';
+import BugattiCabrio from './images/Bugatti Cabrio.png';
 const Items = [
   /* 
   {
@@ -31,10 +33,10 @@ const Items = [
     isPopupVisible: false,
   },
   {
-    id: 'rec1JZlfCIBOPdcT2',
-    title: 'Bugatti Type 57-B',
-    price: '215,00',
-    img: BugattiBlack,
+    id: '',
+    title: 'Bugatti Cabrio',
+    price: '546,00',
+    img: BugattiCabrio,
     amount: 0,
     isPopupVisible: false,
   },
@@ -55,13 +57,14 @@ const Items = [
     isPopupVisible: false,
   },
   {
-    id: 'aoikRxBsE14Rr2Mej',
-    title: 'De Tomaso',
-    price: '354,00',
-    img: DeTomaso,
+    id: 'aoikjishE14Rr2Mej',
+    title: 'Shelby Cobra',
+    price: '323,00',
+    img: ShelbyCobra,
     amount: 0,
     isPopupVisible: false,
   },
+
   {
     id: 'recwTo160XST3PIoW',
     title: 'Ferrari',
@@ -70,11 +73,20 @@ const Items = [
     amount: 0,
     isPopupVisible: false,
   },
+
   {
     id: 'lskjRxBsE14Rr2Mej',
     title: 'Ford Mustang',
     price: '294,00',
     img: FordMustang,
+    amount: 0,
+    isPopupVisible: false,
+  },
+  {
+    id: 'rec1JZlfCIBOPdcT2',
+    title: 'Bugatti Type 57-B',
+    price: '215,00',
+    img: BugattiBlack,
     amount: 0,
     isPopupVisible: false,
   },
@@ -103,19 +115,20 @@ const Items = [
     amount: 0,
     isPopupVisible: false,
   },
-  {
-    id: 'recdRxBs6z7ur2VuJ',
-    title: 'Ferrari GTO',
-    price: '293,00',
-    img: FerrariBox,
-    amount: 1,
-    isPopupVisible: false,
-  },
+
   {
     id: 'recdRxBsE14Rr2VuI',
     title: 'Porsche',
     price: '315,00',
     img: Porsche,
+    amount: 0,
+    isPopupVisible: false,
+  },
+  {
+    id: 'aoikRxBsE14Rr2Mej',
+    title: 'De Tomaso',
+    price: '354,00',
+    img: DeTomaso,
     amount: 0,
     isPopupVisible: false,
   },

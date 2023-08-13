@@ -1,6 +1,9 @@
-# Shopping cart app
+## Welcome! 👋
 
-![preview for the matchbox-shopping-cart app](./screenshot.png)
+## Overview
+
+Welcome to my Matchbox Shopping Cart App built with React.js and TypeScript.
+This project includes all the cool features Redux Toolkit has to offers, such as store, slice, reducers, action creators with a seamless shopping experiance for the user, enchanced by the presence of beautiful vintage Matchbox cars.
 
 ## Table of contents
 
@@ -14,12 +17,6 @@
   - [Continued development](#continued-development)
   - [Acknowledgments](#acknowledgments)
 - [Author](#author)
-
-## Overview
-
-This Shopping-Cart App includes all the cool features redux toolkit has to offers, things like store, slice, reducers, action creators and of course create async-thunk.
-
-## Welcome! 👋
 
 ## The challenge
 
@@ -55,7 +52,7 @@ The app was built using React and Redux Toolkit to provide a smooth and intuitiv
 
 ### What I learned from this challenge
 
-Developing the Matchbox Shopping Cart App using React and Redux Toolkit was a comprehensive learning experience. I honed state management, async operations, user-centric design, and error handling. Crafting real-time updates, handling styling, and solving challenges enriched my skills, enabling me to create user-friendly and efficient applications.
+Developing the Matchbox Shopping Cart App using React and Redux Toolkit was a comprehensive learning experience. Through this challenge, I gained valuable insights into state management with Redux-Toolkit. I learned to dynamically update totals, handle adding/removing items, and provide user-friendly features like cart reset and quantity adjustments. Implementing hover/focus states enhanced interactivity, and the pop-up window improved user engagement. Through this experience, I refined my ability to deliver a seamless and intuitive user experience, achieving a cart management solution that's both functional and enjoyable, all within a compact yet powerful implementation.
 
 ### My favorite code
 
@@ -123,11 +120,11 @@ My favorites from this challenge:
 
 In future projects, I want to focus on the following areas to improve my skills:
 
-State Management: Advanced State Management using Redux-Toolkit with React.
+- State Management: Advanced State Management using Redux-Toolkit with React.
 
-Data Fetching: Seamless Data Fetching implementation.
+- Data Fetching: Seamless Data Fetching implementation.
 
-Typescript: Deepening my Typescript skills.
+- Typescript: Deepening my Typescript skills.
 
 ### Usefull resources
 
@@ -137,8 +134,8 @@ Typescript: Deepening my Typescript skills.
 
 ### Acknowledgments
 
-Thank you to FullStack Lab.
+Thank you to FullStack Lab for providing valuable resources and guidance.
 
 ### Author
 
-- Website - [Murci2022/M.K](https://portfolio-mate.vercel.app/)
+- Website - [Murci2022/Maté Kamaras](https://portfolio-mate.vercel.app/) - Personal portfolio showcasing my web development journey and projects.
