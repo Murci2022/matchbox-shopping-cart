@@ -1,6 +1,7 @@
 import BugattiGold from './images/Bugatti Type 57 Atlantic 1938.png';
 import BugattiBlack from './images/Bugatti Type 57 Atlantic 1938:.png.png';
 import Ferrari from './images/Ferrari 250 GTO:.png.png';
+import FerrariRed from './images/Ferrari 250 GTO 1962:.png.png';
 import Porsche from './images/Porsche 911 1963.png';
 import Lamborgini from './images/Lamborghini Miura 1966.png';
 import DeTomaso from './images/De Tomaso Pantera 1970.png';
@@ -9,7 +10,6 @@ import RollsRoyceCabrio from './images/Rolls Royce Cabrio.png';
 import MercedesGullwing from './images/Mercedes 300SL Gullwing 1954.png';
 import ChevroletCorvette from './images/Chevrolet Corvette in 1963.png';
 import AstonMartin from './images/Aston Martin DB5.png';
-import FerrariBox from './images/Ferrari 250 GTO.png';
 import ShelbyCobra from './images/ShelbyCobra.png';
 import BugattiCabrio from './images/Bugatti Cabrio.png';
 const Items = [
@@ -32,14 +32,16 @@ const Items = [
     amount: 1,
     isPopupVisible: false,
   },
+
   {
-    id: '',
-    title: 'Bugatti Cabrio',
-    price: '546,00',
-    img: BugattiCabrio,
+    id: 'rec1JZlfCIBOPdcT2',
+    title: 'Bugatti Type 57-B',
+    price: '215,00',
+    img: BugattiBlack,
     amount: 0,
     isPopupVisible: false,
   },
+
   {
     id: 'aoikUhFgE1R2Rtej',
     title: 'Mercedes Gullwing',
@@ -83,10 +85,19 @@ const Items = [
     isPopupVisible: false,
   },
   {
-    id: 'rec1JZlfCIBOPdcT2',
-    title: 'Bugatti Type 57-B',
-    price: '215,00',
-    img: BugattiBlack,
+    id: 'lskjRxBsE14Rr7z6t',
+    title: 'Bugatti Cabrio',
+    price: '546,00',
+    img: BugattiCabrio,
+    amount: 0,
+    isPopupVisible: false,
+  },
+
+  {
+    id: 'jjjjRxBsE14Rr2Mej',
+    title: 'Ferrari Red',
+    price: '476,00',
+    img: FerrariRed,
     amount: 0,
     isPopupVisible: false,
   },
