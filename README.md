@@ -138,4 +138,4 @@ Thank you to FullStack Lab for providing valuable resources and guidance.
 
 ### Author
 
-- Website - [Murci2022/Maté Kamaras](https://portfolio-mate.vercel.app/) - Personal portfolio showcasing my web development journey and projects.
+- Website - [Murci2022/M.K.Y](https://portfolio-mate.vercel.app/) - Personal portfolio showcasing my web development journey and projects.
