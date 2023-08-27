@@ -5,6 +5,8 @@ Variables
 */
 
 :root {
+  --clr-primary: #070446;
+  --clr-primary-light: #626262;
   --clr-primary1: #b33301;
   --clr-primary-dark2: #691e00;
   --clr-primary-light3: #ff4800;
@@ -12,12 +14,10 @@ Variables
   --clr-white: #fff;
   --clr-grey-dark: #262626;
   --clr-grey-light: #617d98;
-  /* -------------- */
-  --clr-primary: #070446;
-  --clr-primary-dark: #282566;
-  --clr-primary-light: #626262;
-  --clr-grey-1: #102a42;
   --clr-grey-10: #262626;
+  /* -------------- */
+  --clr-primary-dark: #282566;
+  --clr-grey-1: #102a42;
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   --transition: all 0.3s linear;
